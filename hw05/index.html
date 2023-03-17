@@ -2,146 +2,151 @@
 <html lang="en">
 
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link href="./style.css" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>作品集 - 作業五</title>
-    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" charset="utf-8"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="./style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>作品集 - 作業五</title>
+  <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" charset="utf-8"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
 
 </head>
 
 <body style="background-color: #6A4C9C;">
-    <div>
+  <div>
     <div class="row Color Block" style="font-size: 35px;">
-        作業 05
+      作業 05
     </div>
     <div class="row Color Block" id="Response"></div>
     <div class="row Color Block">
-        <div class="col-12 Color Block" style="margin: 0px; font-size: 36px;">評分標準</div>
-        <div class="col-2 Color Block" style="margin: 0px; color:#CCFFCC; background: #336633;">
-            Simple baseline (2pt)<br>
-            使用守寫字(舊版)製作字型
-        </div>
-        <div class="col-2 Color Block" style="margin: 0px; color:#CCFFCC; background: #336633;" id="Pass-1">
-            
-        </div>
-        <div class="col-2 Color Block" style="margin: 0px; color:#FF8888; background: #663333;">
-            Medium baseline (2pt)<br>
-            使用Flexi Font 系統製作字型
-        </div>
-        <div class="col-2 Color Block" style="margin: 0px; color:#FF8888; background: #663333;" id="Pass-2">
-            
-        </div>
-        <div class="col-2 Color Block" style="margin: 0px; color:#DDAAFF; background: #442266;">
-            Strong baseline (6pt)<br>
-            繳交實體的紙本稿紙 (限定紙本)
-        </div>
-        <div class="col-2 Color Block" style="margin: 0px; color:#DDAAFF; background: #442266;">
-            依繳交情況而定
-        </div>
+      <div class="col-12 Color Block" style="margin: 0px; font-size: 36px;">評分標準</div>
+      <div class="col-2 Color Block" style="margin: 0px; color:#CCFFCC; background: #336633;">
+        Simple baseline (2pt)<br>
+        使用守寫字(舊版)製作字型
+      </div>
+      <div class="col-2 Color Block" style="margin: 0px; color:#CCFFCC; background: #336633;" id="Pass-1">
 
-        
+      </div>
+      <div class="col-2 Color Block" style="margin: 0px; color:#FF8888; background: #663333;">
+        Medium baseline (2pt)<br>
+        使用Flexi Font 系統製作字型
+      </div>
+      <div class="col-2 Color Block" style="margin: 0px; color:#FF8888; background: #663333;" id="Pass-2">
+
+      </div>
+      <div class="col-2 Color Block" style="margin: 0px; color:#DDAAFF; background: #442266;">
+        Strong baseline (6pt)<br>
+        繳交實體的紙本稿紙 (限定紙本)
+      </div>
+      <div class="col-2 Color Block" style="margin: 0px; color:#DDAAFF; background: #442266;">
+        依繳交情況而定
+      </div>
+
+
     </div>
     <div class="row hw12">
-        <div class="col-md-12 twenty">
-    <table>
-        <tbody><tr>
-          <th>總分</th>
-          <th>完成後打勾</th>
-          <th>配分</th>
-          <th>分項描述</th>
-        </tr>
-        <tr>
-          <td rowspan="7" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
-          <td id="m1">2</td>
-          <td>Simple baseline - 使用守寫字(舊版)製作字型</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
-          <td id="m2">2</td>
-          <td>Medium baseline - 使用Flexi Font 系統製作字型</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
-          <td id="m3">6</td>
-          <td>Strong baseline - 繳交實體的紙本稿紙 (限定紙本)</td>
-        </tr>
-      </tbody>
-    </table>
+      <div class="col-md-12 twenty">
+        <table>
+          <tbody>
+            <tr>
+              <th>總分</th>
+              <th>完成後打勾</th>
+              <th>配分</th>
+              <th>分項描述</th>
+            </tr>
+            <tr>
+              <td rowspan="7" id="myTotal"></td>
+              <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
+              <td id="m1">2</td>
+              <td>Simple baseline - 使用守寫字(舊版)製作字型</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
+              <td id="m2">2</td>
+              <td>Medium baseline - 使用Flexi Font 系統製作字型</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
+              <td id="m3">6</td>
+              <td>Strong baseline - 繳交實體的紙本稿紙 (限定紙本)</td>
+            </tr>
+          </tbody>
+        </table>
 
-    </div></div></div>
-
-    <div class="row Color Block">
-        <div class="col-6 Color Block" style="margin: 0px; font-size: 35px;">守寫字系統</div>
-        <div class="col-6 Color Block" style="margin: 0px; font-size: 35px;">FlexiFont系統</div><br>
-        <div class="col-6 Color Block" style="margin: 0px; " id="DemoText1">
-            !"#$%&'()*+,-./ 0123456789:;<=>?@<br>
-            ABCDEFGHIJKLMN OPQRSTUVWXYZ[\]^_`<br>
-            abcdefghijklmn opqrstuvwxyz{|}~<br>
-            甲乙丙丁戊己庚辛壬癸子丑寅卯辰巳午未申酉戌亥鼠牛虎兔龍蛇馬羊猴雞狗豬一二三四五六七八九十零壹貳參肆伍陸柒捌玖拾金木水火土人生而自由以下為修課名單周雨柔林耘王育嵐顏琦恩劉瑄軒許鈞豪陳立尊闕沛宇奕文心俞喬羅彥洪嘉璘吳佩臻莊永梁佑駿柏綸鑫童煜翔峰楷萬弘李光耀森黃乃盧岳劭曹慶宥禹彤家同淇淼謝承翰哲維上澤雷岱蓉賴俊霖威勝蔡竣傑堯唐政瑋之正邱凡洺榮庭卓亞璇偉斌易安萱谷軍廖若鄭少筱崴然詹緯德至秉宏銘麟郁凱錩徐妍婕楊朋琳玲佳吟天胡紹帆力爽右儒沈芃妡志謙怡譚游瑩塗晨睿
-        </div>
-        <div class="col-6 Color Block" style="margin: 0px;" id="DemoText2">
-            !"#$%&'()*+,-./ 0123456789 :;<=>?@<br>
-            ABCDEFGHIJKLMN OPQRSTUVWXYZ[\]^_`<br>
-            abcdefghijklmn opqrstuvwxyz{|}~<br>
-            甲乙丙丁戊己庚辛壬癸子丑寅卯辰巳午未申酉戌亥鼠牛虎兔龍蛇馬羊猴雞狗豬一二三四五六七八九十零壹貳參肆伍陸柒捌玖拾金木水火土人生而自由以下為修課名單周雨柔林耘王育嵐顏琦恩劉瑄軒許鈞豪陳立尊闕沛宇奕文心俞喬羅彥洪嘉璘吳佩臻莊永梁佑駿柏綸鑫童煜翔峰楷萬弘李光耀森黃乃盧岳劭曹慶宥禹彤家同淇淼謝承翰哲維上澤雷岱蓉賴俊霖威勝蔡竣傑堯唐政瑋之正邱凡洺榮庭卓亞璇偉斌易安萱谷軍廖若鄭少筱崴然詹緯德至秉宏銘麟郁凱錩徐妍婕楊朋琳玲佳吟天胡紹帆力爽右儒沈芃妡志謙怡譚游瑩塗晨睿
-        </div><br>
-        <div class="col-6 Color Block" style="margin: 0px;">
-            檔案請放在 ./src 資料夾中<br>
-            檔案名稱改為 "easy.ttf" (請全部小寫) 
-        </div>
-        <div class="col-6 Color Block" style="margin: 0px;">
-            檔案請放在 ./src 資料夾中<br>
-            檔案名稱改為 "medium.ttf" (請全部小寫) 
-        </div><br>
-        </div>
+      </div>
     </div>
+  </div>
 
-    <script>
-        $(function() {
-        var f = function() {
-          $(this).next().text($(this).is(':checked') ? '做完' : '未做完');
-        };
-        $('input').change(f).trigger('change');
-      });
-    
-      d3.select("#myCheckbox1").on("change",update);
-      d3.select("#myCheckbox2").on("change",update);
-      d3.select("#myCheckbox3").on("change",update);
-      d3.select("#myCheckbox4").on("change",update);
-      d3.select("#myCheckbox5").on("change",update);
-      d3.select("#myCheckbox6").on("change",update);
-      d3.select("#myCheckbox7").on("change",update);
-    
-      update();
-      
-      function update(){
-    
-        var score = 0;
-    
-        if (d3.select("#myCheckbox1").property("checked")){
-          score += parseInt(d3.select('#m1').html());
-        }
-    
-        if (d3.select("#myCheckbox2").property("checked")){
-          score += parseInt(d3.select('#m2').html());   
-        }
-    
-        if (d3.select("#myCheckbox3").property("checked")){
-          score += parseInt(d3.select('#m3').html());   
-        }
-        console.log( score );
-        d3.select("#myTotal").html(score);    
+  <div class="row Color Block">
+    <div class="col-6 Color Block" style="margin: 0px; font-size: 35px;">守寫字系統</div>
+    <div class="col-6 Color Block" style="margin: 0px; font-size: 35px;">FlexiFont系統</div><br>
+    <div class="col-6 Color Block" style="margin: 0px; " id="DemoText1">
+      !"#$%&'()*+,-./ 0123456789:;<=>?@<br>
+        ABCDEFGHIJKLMN OPQRSTUVWXYZ[\]^_`<br>
+        abcdefghijklmn opqrstuvwxyz{|}~<br>
+        甲乙丙丁戊己庚辛壬癸子丑寅卯辰巳午未申酉戌亥鼠牛虎兔龍蛇馬羊猴雞狗豬一二三四五六七八九十零壹貳參肆伍陸柒捌玖拾金木水火土人生而自由以下為修課名單周雨柔林耘王育嵐顏琦恩劉瑄軒許鈞豪陳立尊闕沛宇奕文心俞喬羅彥洪嘉璘吳佩臻莊永梁佑駿柏綸鑫童煜翔峰楷萬弘李光耀森黃乃盧岳劭曹慶宥禹彤家同淇淼謝承翰哲維上澤雷岱蓉賴俊霖威勝蔡竣傑堯唐政瑋之正邱凡洺榮庭卓亞璇偉斌易安萱谷軍廖若鄭少筱崴然詹緯德至秉宏銘麟郁凱錩徐妍婕楊朋琳玲佳吟天胡紹帆力爽右儒沈芃妡志謙怡譚游瑩塗晨睿
+    </div>
+    <div class="col-6 Color Block" style="margin: 0px;" id="DemoText2">
+      !"#$%&'()*+,-./ 0123456789 :;<=>?@<br>
+        ABCDEFGHIJKLMN OPQRSTUVWXYZ[\]^_`<br>
+        abcdefghijklmn opqrstuvwxyz{|}~<br>
+        甲乙丙丁戊己庚辛壬癸子丑寅卯辰巳午未申酉戌亥鼠牛虎兔龍蛇馬羊猴雞狗豬一二三四五六七八九十零壹貳參肆伍陸柒捌玖拾金木水火土人生而自由以下為修課名單周雨柔林耘王育嵐顏琦恩劉瑄軒許鈞豪陳立尊闕沛宇奕文心俞喬羅彥洪嘉璘吳佩臻莊永梁佑駿柏綸鑫童煜翔峰楷萬弘李光耀森黃乃盧岳劭曹慶宥禹彤家同淇淼謝承翰哲維上澤雷岱蓉賴俊霖威勝蔡竣傑堯唐政瑋之正邱凡洺榮庭卓亞璇偉斌易安萱谷軍廖若鄭少筱崴然詹緯德至秉宏銘麟郁凱錩徐妍婕楊朋琳玲佳吟天胡紹帆力爽右儒沈芃妡志謙怡譚游瑩塗晨睿
+    </div><br>
+    <div class="col-6 Color Block" style="margin: 0px;">
+      檔案請放在 ./src 資料夾中<br>
+      檔案名稱改為 "easy.ttf" (請全部小寫)
+    </div>
+    <div class="col-6 Color Block" style="margin: 0px;">
+      檔案請放在 ./src 資料夾中<br>
+      檔案名稱改為 "medium.ttf" (請全部小寫)
+    </div><br>
+  </div>
+  </div>
+
+  <script>
+    $(function () {
+      var f = function () {
+        $(this).next().text($(this).is(':checked') ? '做完' : '未做完');
+      };
+      $('input').change(f).trigger('change');
+    });
+
+    d3.select("#myCheckbox1").on("change", update);
+    d3.select("#myCheckbox2").on("change", update);
+    d3.select("#myCheckbox3").on("change", update);
+    d3.select("#myCheckbox4").on("change", update);
+    d3.select("#myCheckbox5").on("change", update);
+    d3.select("#myCheckbox6").on("change", update);
+    d3.select("#myCheckbox7").on("change", update);
+
+    update();
+
+    function update() {
+
+      var score = 0;
+
+      if (d3.select("#myCheckbox1").property("checked")) {
+        score += parseInt(d3.select('#m1').html());
       }
-    </script>
+
+      if (d3.select("#myCheckbox2").property("checked")) {
+        score += parseInt(d3.select('#m2').html());
+      }
+
+      if (d3.select("#myCheckbox3").property("checked")) {
+        score += parseInt(d3.select('#m3').html());
+      }
+      console.log(score);
+      d3.select("#myTotal").html(score);
+    }
+  </script>
 
 </body>
 
 
 <script src="./index.js"></script>
+
 </html>
